@@ -16,11 +16,11 @@ const GoogleSearchBar = () => {
 		<div>
 			<form onSubmit={handleSubmit}>
 				<input
-					type="text"
-					name="search"
-					id="search"
+					type='text'
+					name='search'
+					id='search'
 					onChange={handleSearchChange}
-					placeholder="Type your search term here"
+					placeholder='Type your search terms here'
 				/>
 				<button>Search!</button>
 			</form>

@@ -1,4 +1,5 @@
 import Search from "./components/GoogleSearchBar";
+import "./styles/css/index.css";
 
 function App() {
 	return (
