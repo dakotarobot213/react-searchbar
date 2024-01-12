@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import { IoSearch } from "react-icons/io5";
 
 const GoogleSearchBar = () => {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -13,18 +14,21 @@ const GoogleSearchBar = () => {
 	};
 
 	return (
-		<div>
-			<form onSubmit={handleSubmit}>
+		<form
+			className="searchbar"
+			onSubmit={handleSubmit}
+		>
+			<div className="bar-container">
 				<input
-					type='text'
-					name='search'
-					id='search'
+					type="text"
+					name="query"
+					id="query"
 					onChange={handleSearchChange}
-					placeholder='Type your search terms here'
+					placeholder="Type your search terms here"
 				/>
 				<button>Search!</button>
-			</form>
-		</div>
+			</div>
+		</form>
 	);
 };
 
