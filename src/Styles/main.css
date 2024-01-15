@@ -348,7 +348,7 @@ p {
   justify-content: center;
 }
 .searchbar .bar-container {
-  width: 23rem;
+  width: 33rem;
   height: 2.75rem;
   background-color: #eee;
   border: 0.275rem solid hsl(210, 30%, 45%);
@@ -358,28 +358,10 @@ p {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+.searchbar .bar-container > * {
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+}
 .searchbar .bar-container input {
   width: 100%;
-}
-
-@media only screen and (min-width: 1024px) {
-  .jobs .jobs-center {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    column-gap: 4rem;
-  }
-  .jobs .btn-container {
-    flex-direction: column;
-    justify-content: start;
-  }
-  .jobs .job-btn {
-    margin-bottom: 1rem;
-  }
-  .jobs .job-btn:hover {
-    box-shadow: 0 2px hsl(189, 70%, 52%);
-  }
-  .jobs .active-btn {
-    box-shadow: 0 2px hsl(189, 70%, 52%);
-  }
 }/*# sourceMappingURL=main.css.map */

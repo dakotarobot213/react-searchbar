@@ -9,22 +9,22 @@ const GoogleSearchBar = () => {
 		window.open(`https://google.com/search?q=${searchQuery}`, "_blank");
 	};
 
-	const handleSearchChange = (e) => {
-		setSearchQuery(e.target.value.trim().replace(/\s+/g, "+"));
+	const handleChange = (e) => {
+		setSearchQuery(e.target.value);
 	};
 
 	return (
 		<form
-			className="searchbar"
+			className='searchbar'
 			onSubmit={handleSubmit}
 		>
-			<div className="bar-container">
+			<div className='bar-container'>
 				<input
-					type="text"
-					name="query"
-					id="query"
-					onChange={handleSearchChange}
-					placeholder="Type your search terms here"
+					type='text'
+					name='query'
+					id='query'
+					onChange={handleChange}
+					placeholder='Type your query here'
 				/>
 				<button>Search!</button>
 			</div>
